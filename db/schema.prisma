@@ -56,6 +56,7 @@ model User {
     role          String?   @default("user")
     accounts      Account[]
     sessions      Session[]
+    wallet        Float? @default(0)
 }
 
 model VerificationToken {
